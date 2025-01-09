@@ -1,4 +1,4 @@
-const themeToggle = document.getElementById('toggle-theme');
+const themeToggle = document.getElementById('switch');
 const currentTheme = localStorage.getItem('theme');
 
 if (currentTheme === 'dark') {

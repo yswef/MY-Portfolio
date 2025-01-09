@@ -303,7 +303,7 @@ body.dark-theme {
     /* يزيل الخط السفلي عن النصوص داخل الزر */
     cursor: pointer;
     /* يجعل مؤشر الفأرة يتحول إلى شكل اليد عند التمرير فوق الزر */
-    border: 1px solid rgb(40, 144, 241);
+    border: 1px solid rgb(24, 119, 242);
     /* يضيف إطارًا حول الزر بلون معين */
     border-radius: 25px;
     /* يجعل الزوايا مستديرة بالكامل */
@@ -311,7 +311,7 @@ body.dark-theme {
     /* يزيل الإطار الأزرق الافتراضي عند التركيز على الزر */
     overflow: hidden;
     /* يخفي أي محتوى يتجاوز حدود الزر */
-    color: rgb(40, 144, 241);
+    color: rgb(24, 119, 242);
     /* يحدد لون النص داخل الزر */
     transition: color 0.3s 0.1s ease-out;
     /* يضيف تأثير تغيير تدريجي للون النص */
@@ -367,7 +367,7 @@ body.dark-theme {
 }
 
 .Social_media_BUTTON:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
+    box-shadow: inset 0 0 0 10em rgb(24, 119, 242);
     /* يضيف تأثير تعبئة تدريجي للخلفية داخل الزر */
 }
 
@@ -440,8 +440,12 @@ body.dark-theme {
     gap: 20px; /* إضافة مسافة بين الأزرار */
     flex-wrap: wrap; /* السماح بلف العناصر إذا لم يكن هناك مساحة كافية */
 }
+.footer-content li a{
+    text-decoration: none;
 
-.Social_media_BUTTON, .Social_mediag ,YouTube {
+}
+
+.Social_media_BUTTON, .Social_mediag ,.YouTube,.Telegram ,.WhatsApp{
     width: 150px; /* توحيد عرض الأزرار */
     height: 50px; /* توحيد ارتفاع الأزرار */
     text-align: center; /* محاذاة النص داخل الزر */
@@ -499,5 +503,281 @@ body.dark-theme {
   
   .YouTube:hover::before {
     box-shadow: inset 0 0 0 10em rgb(255 0 0);
+  }
+  .Telegram {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(36, 161, 222);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(36, 161, 222);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .Telegram span {
+    margin: 10px;
+  }
+  
+  .Telegram::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  .Telegram:hover {
+    color: #fff;
+    border: 1px solid rgb(36, 161, 222);
+  }
+  
+  .Telegram:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(36, 161, 222);
+  }
+  .WhatsApp {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(37, 211, 102);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(37, 211, 102);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .WhatsApp span {
+    margin: 10px;
+  }
+  
+  .WhatsApp::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  .WhatsApp:hover {
+    color: #fff;
+    border: 1px solid rgb(37, 211, 102);
+  }
+  
+  .WhatsApp:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(37, 211, 102);
+  }
+  .Discord {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgba(88, 101, 242, 1);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgba(88, 101, 242, 1);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .Discord span {
+    margin: 10px;
+  }
+  
+  .Discord::before {
+    position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+  }
+  
+  .Discord:hover {
+    color: #fff;
+    border: 1px solid rgba(88, 101, 242, 1);
+  }
+  
+  .Discord:hover::before {
+    box-shadow: inset 0 0 0 10em rgba(88, 101, 242, 1);
+  }
+  .Instragram{
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(255,0,0);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255,0,0);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .Instragram span {
+    margin: 10px;
+  }
+  
+  .Instragram::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  .Instragram:hover {
+    color: #fff;
+    border: 1px solid rgb(255,0,0);
+  }
+  
+  .Instragram:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+  }
+  .switch {
+    font-size: 17px;
+    position: relative;
+    /* display: inline-block; */
+    float: right;
+    width: 3.5em;
+    height: 2em;
+    cursor: pointer;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    --background: #20262c;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: 0.5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #ececd9, -4px 1px 4px 0px #dadada;
+    background: var(--background);
+    transition: 0.5s;
+  }
+  
+  .decoration {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    right: 20%;
+    top: 15%;
+    background: #e5f041e6;
+    backdrop-filter: blur(10px);
+    transition: all 0.5s;
+    box-shadow: -7px 10px 0 #e5f041e6, 8px 15px 0 #e5f041e6, -17px 1px 0 #e5f041e6,
+      -20px 10px 0 #e5f041e6, -7px 23px 0 #e5f041e6, -15px 25px 0 #e5f041e6;
+  }
+  
+  input:checked ~ .decoration {
+    transform: translateX(-20px);
+    width: 10px;
+    height: 10px;
+    background: white;
+    box-shadow: -12px 0 0 white, -6px 0 0 1.6px white, 5px 15px 0 1px white,
+      1px 17px 0 white, 10px 17px 0 white;
+  }
+  
+  input:checked + .slider {
+    background-color: #5494de;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #efdf2b, 0 0 10px 0px #efdf2b;
   }
   

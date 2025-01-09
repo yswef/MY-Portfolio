@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="المهندس: يوسف الحمزي">
+    <meta name="keywords" content="Yusef Alhmzy, Portfolio, Software Engineer">
+    <title>Yusef Alhmzy</title>
+    <link rel="icon" type="image/png" href="JPG/image.png">
+     <!-- Swiper CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+     <!-- ملف CSS الخاص -->
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MY Portfolio</h1>
+        <h2>I am<br>Yusef Alhmzy</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#section1">About us</a></li>
+            <li><a href="#section2">Projects</a></li>
+            <li><a href="#section3">القسم 3</a></li>
+            <li><a href="#section4">القسم 4</a></li>
+            
+            
+                <button id="toggle-theme" class="custom-button">Dark Mode</button> 
+            
+        </ul>
+        
+    </nav>
+    <main>
+        <section id="section1">
+            <div class="txt">
+                <h2>Who is Yusef</h2>
+                <p>I am <strong>Yusef Al-Hamzi,<br></strong>
+                    an ambitious boy,
+                    <strong>18-year-old</strong><br>
+                    born on <strong>June 26, 2006</strong>.<br>
+                    I am currently a <strong>university student</strong> and work as a software engineer, specializing in <strong>Backend Development</strong> using <strong>Python.</strong><br>
+                    I am also learning HTML and CSS to expand my skills in <strong>web development</strong>.<br>
+                    I love technical challenges and am always striving to improve myself and learn new technologies.<br>
+                </p>
+                <p>
+                    I <strong>dream</strong> of becoming an expert in engineering and programming, contributing to the development of technologies that make people's lives easier.
+                    <br>I am optimistic about the future and ready to put in all the effort to achieve my dreams.
+                </p>
+            </div>
+            <div class="image-container">
+                <a href="https://alpha-code.net/" target="_blank">
+                    <img src="JPG/image.jpg" alt="Profile picture">
+                </a>
+            </div>
+        </section>
+        <div class="title">
+            <h2>My Projects</h2>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="JPG/p1.jpg" alt="Project 1">
+                    <div class="project-description">MailboxSplitter is a Python-based console application that processes and organizes .inbox files. It allows users to split a mailbox file into smaller, categorized files based on specific criteria like sender, subject, or date. The app is lightweight, efficient, and designed for quick organization of large mailbox files..</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="JPG/p2.jpg" alt="Project 2">
+                    <div class="project-description">Task Management and Productivity App A Python console app for managing tasks, tracking time, and boosting productivity. Features include user profiles, task prioritization, a Pomodoro timer, phone usage tracking, and productivity reports. Built with OOP principles like inheritance and encapsulation, perfect for productivity enthusiasts. </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="JPG/p3.jpg" alt="Project 3">
+                    <div class="project-description">PassSafe is a powerful tool that checks the strength of your passwords, helping you create secure ones effortlessly. With instant feedback and tips for improvement, PassSafe ensures your online accounts stay protected from unauthorized access.</div>
+                </div>
+                <!-- <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/800x400?text=Project+4" alt="Project 4">
+                    <div class="project-description">This is a description of the fourth project.</div>
+                </div> -->
+            </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </main>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- ملف JS الخاص -->
+<script src="script.js"></script>
+</body>
+</html>

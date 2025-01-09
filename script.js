@@ -6,7 +6,7 @@ if (currentTheme === 'dark') {
     themeToggle.textContent = 'Light Mode';
 }
 
-themeToggle.addEventListener('click', function() {
+themeToggle.addEventListener('click', function () {
     document.body.classList.toggle('dark-theme');
     const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
     localStorage.setItem('theme', theme);
@@ -28,13 +28,13 @@ var swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    
+
 });
 // إيقاف التمرير عند الضغط بالماوس
-swiper.el.addEventListener('mouseenter', function() {
+swiper.el.addEventListener('mouseenter', function () {
     swiper.autoplay.stop(); // إيقاف التمرير التلقائي عند الماوس فوق العنصر
 });
 
-swiper.el.addEventListener('mouseleave', function() {
+swiper.el.addEventListener('mouseleave', function () {
     swiper.autoplay.start(); // إعادة تشغيل التمرير التلقائي عند مغادرة الماوس
 });

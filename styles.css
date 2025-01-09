@@ -1,43 +1,87 @@
 header {
-    background-color: #888585; /* خلفية داكنة */
-    color: rgb(255, 255, 255); /* النص باللون الأبيض */
-    text-align: center; /* محاذاة النص في المنتصف */
-    padding: 20px 0; /* إضافة مسافة داخلية */
+    background-color: #888585;
+    /* خلفية داكنة */
+    color: rgb(255, 255, 255);
+    /* النص باللون الأبيض */
+    text-align: center;
+    /* محاذاة النص في المنتصف */
+    padding: 20px 0;
+    /* إضافة مسافة داخلية */
 }
+.Social_media {
+    background-color: #888585; /* لون خلفية التذييل */
+    color: white; /* لون النص */
+    text-align: center; /* توسيط النصوص */
+    padding: 20px 0; /* مسافات داخلية للتذييل */
+    position: relative; /* موقع التذييل */
+    bottom: 0; /* تثبيت في الأسفل */
+    width: 100%; /* يمتد لعرض الصفحة بالكامل */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
+    /* background: transparent; */
+    /* اجعل خلفية القسم شفافة */
+    overflow: visible;
+    display: inline-block;
+    /* عرض العناصر في صف واحد */
+    margin-top: 15px; /* مسافة بين النص وأزرار الروابط الاجتماعية */
+}
+
 nav ul {
-    background-color: #888585; /* خلفية داكنة */
-    color: rgb(255, 255, 255); /* النص باللون الأبيض */
-    list-style: none; /* إزالة النقاط من القائمة */
+    background-color: #888585;
+    /* خلفية داكنة */
+    color: rgb(255, 255, 255);
+    /* النص باللون الأبيض */
+    list-style: none;
+    /* إزالة النقاط من القائمة */
     padding: 6px;
-    text-align: center; /* محاذاة النص في المنتصف */
+    text-align: center;
+    /* محاذاة النص في المنتصف */
 }
+
 nav ul li {
-    display: inline-block; /* عرض العناصر في صف واحد */
-    margin: 0 15px; /* إضافة مسافة بين العناصر */
+    display: inline-block;
+    /* عرض العناصر في صف واحد */
+    margin: 0 15px;
+    /* إضافة مسافة بين العناصر */
 }
+
 nav ul li a {
-    color: rgb(0, 0, 0); /* تغيير لون الروابط إلى الأبيض */
-    text-decoration: none; /* إزالة التسطير تحت الرابط */
-    font-weight: bold; /* جعل النص عريض */
+    color: rgb(0, 0, 0);
+    /* تغيير لون الروابط إلى الأبيض */
+    text-decoration: none;
+    /* إزالة التسطير تحت الرابط */
+    font-weight: bold;
+    /* جعل النص عريض */
 }
+
 a:hover {
-    text-decoration: underline; /* إضافة التسطير عند مرور الماوس على الرابط */
+    text-decoration: underline;
+    /* إضافة التسطير عند مرور الماوس على الرابط */
     background-color: #888585;
     color: white;
 }
+
 section {
-    background-color: rgb(179, 178, 178); /* خلفية بيضاء */
-    display: flex; /* استخدام Flexbox لتنسيق الصورة والنص */
+    background-color: rgb(179, 178, 178);
+    /* خلفية بيضاء */
+    display: flex;
+    /* استخدام Flexbox لتنسيق الصورة والنص */
     color: ghostwhite;
-    margin: 10px auto; /* إضافة مسافة حول الأقسام */
+    margin: 10px auto;
+    /* إضافة مسافة حول الأقسام */
     padding: 20px;
-    border-radius: 8px; /* إضافة حواف دائرية للأقسام */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
-    max-width: 900px; /* تحديد عرض القسم */
+    border-radius: 8px;
+    /* إضافة حواف دائرية للأقسام */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* إضافة ظل خفيف */
+    max-width: 900px;
+    /* تحديد عرض القسم */
 }
+
 section h2 {
-    color: #3f3d46; /* تغيير لون العناوين إلى اللون الداكن */
+    color: #3f3d46;
+    /* تغيير لون العناوين إلى اللون الداكن */
 }
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -45,27 +89,41 @@ section h2 {
     padding: 20px;
     position: relative;
 }
+
 .image-container {
-    float: right; /* وضع الصورة في الجانب الأيمن */
-    margin-left: 20px; /* إضافة مسافة بين الصورة والنص */
+    float: right;
+    /* وضع الصورة في الجانب الأيمن */
+    margin-left: 20px;
+    /* إضافة مسافة بين الصورة والنص */
 }
+
 .image-container img {
-    width: 150px; /* تحديد عرض الصورة */
-    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
-    cursor: pointer; /* تغيير شكل المؤشر إلى يد عند التمرير فوق الصورة */
+    width: 150px;
+    /* تحديد عرض الصورة */
+    height: auto;
+    /* الحفاظ على نسبة العرض إلى الارتفاع */
+    cursor: pointer;
+    /* تغيير شكل المؤشر إلى يد عند التمرير فوق الصورة */
 }
+
 .text {
-    flex: 1; /* جعل النص يأخذ المساحة المتبقية */
+    flex: 1;
+    /* جعل النص يأخذ المساحة المتبقية */
 }
+
 body {
-    font-family: Arial, sans-serif; /* استخدام خط من نوع آريال */
-    line-height: 1.6; /* زيادة المسافة بين الأسطر */
+    font-family: Arial, sans-serif;
+    /* استخدام خط من نوع آريال */
+    line-height: 1.6;
+    /* زيادة المسافة بين الأسطر */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* خلفية الصفحة بلون رمادي فاتح */
+    background-color: #f4f4f4;
+    /* خلفية الصفحة بلون رمادي فاتح */
 }
+
 .custom-button {
-    float: right; 
+    float: right;
     padding: 10px 21px;
     background-color: #888585;
     color: rgb(0, 0, 0);
@@ -76,7 +134,8 @@ body {
     cursor: pointer;
     transition: background-color 0.4s ease;
     font-weight: bold;
-    border: 2px solid #000000; /* Green */
+    border: 2px solid #000000;
+    /* Green */
     margin-top: -5px;
 }
 
@@ -90,8 +149,10 @@ body {
 
 /* تنسيقات الوضع المظلم */
 body.dark-theme {
-    background-color: #333; /* خلفية الصفحة بلون داكن */
-    color: #f4f4f4; /* لون النص */
+    background-color: #333;
+    /* خلفية الصفحة بلون داكن */
+    color: #f4f4f4;
+    /* لون النص */
 }
 
 .dark-theme header {
@@ -121,6 +182,7 @@ body.dark-theme {
 .dark-theme section h2 {
     color: #fff;
 }
+
 .swiper-container {
     width: 90%;
     max-width: 950px;
@@ -140,7 +202,7 @@ body.dark-theme {
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit:fill;
+    object-fit: fill;
     border-radius: 10px;
 
 }
@@ -190,28 +252,252 @@ body.dark-theme {
 .swiper-button-prev {
     left: 10px;
 }
+
 .swiper-pagination {
     opacity: 1;
     transition: opacity 0.3s ease;
 }
 
 
-
-
-.title{
+.title {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center; /* محاذاة النص إلى اليسار */
-    line-height: 1.6; /* تباعد الأسطر لتحسين القراءة */
-    font-size: 33px; /* حجم الخط */
-    font-weight: bold; /* سمك الخط */
-    color: #050505; /* لون النص */
-    text-align: center; /* محاذاة النص في المنتصف */
-    text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* ظل النص */
-    letter-spacing: 2.5px; /* تباعد الحروف */
+    text-align: center;
+    /* محاذاة النص إلى اليسار */
+    line-height: 1.6;
+    /* تباعد الأسطر لتحسين القراءة */
+    font-size: 33px;
+    /* حجم الخط */
+    font-weight: bold;
+    /* سمك الخط */
+    color: #050505;
+    /* لون النص */
+    text-align: center;
+    /* محاذاة النص في المنتصف */
+    text-transform: uppercase;
+    /* تحويل النص إلى أحرف كبيرة */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* ظل النص */
+    letter-spacing: 2.5px;
+    /* تباعد الحروف */
     margin-bottom: 20px;
     transform: translateY(-15px);
 }
 
+.Social_media_BUTTON {
+    background: transparent;
+    /* يجعل خلفية الزر شفافة */
+    position: relative;
+    /* يسمح بتحديد موضع العناصر النسبية داخل الزر مثل `::before` */
+    padding: 5px 15px;
+    /* يحدد المسافة الداخلية بين النص وحدود الزر */
+    display: flex;
+    /* يجعل العنصر يستخدم نموذج flexbox لتموضع العناصر بداخله */
+    align-items: center;
+    /* يوسّط العناصر عموديًا داخل الزر */
+    font-size: 17px;
+    /* حجم النص داخل الزر */
+    font-weight: 600;
+    /* يجعل النص عريضًا نسبيًا */
+    text-decoration: none;
+    /* يزيل الخط السفلي عن النصوص داخل الزر */
+    cursor: pointer;
+    /* يجعل مؤشر الفأرة يتحول إلى شكل اليد عند التمرير فوق الزر */
+    border: 1px solid rgb(40, 144, 241);
+    /* يضيف إطارًا حول الزر بلون معين */
+    border-radius: 25px;
+    /* يجعل الزوايا مستديرة بالكامل */
+    outline: none;
+    /* يزيل الإطار الأزرق الافتراضي عند التركيز على الزر */
+    overflow: hidden;
+    /* يخفي أي محتوى يتجاوز حدود الزر */
+    color: rgb(40, 144, 241);
+    /* يحدد لون النص داخل الزر */
+    transition: color 0.3s 0.1s ease-out;
+    /* يضيف تأثير تغيير تدريجي للون النص */
+    text-align: center;
+    /* يوسّط النص أفقيًا داخل الزر */
+    z-index: 1;
+}
 
+
+.Social_media_BUTTON span {
+    margin: 5px;
+    /* يضيف مسافة خارجية حول النصوص داخل الزر */
+}
+
+.Social_media_BUTTON::before {
+    position: absolute;
+    /* يجعل هذا العنصر يتمركز بالنسبة إلى الزر */
+    top: 0;
+    /* يبدأ من أعلى الزر */
+    left: 0;
+    /* يبدأ من يسار الزر */
+    right: 0;
+    /* ينتهي عند يمين الزر */
+    bottom: 0;
+    /* ينتهي عند أسفل الزر */
+    margin: auto;
+    /* يوسّط العنصر بشكل كامل */
+    content: '';
+    /* يضيف عنصرًا فارغًا */
+    border-radius: 50%;
+    /* يجعل العنصر دائريًا */
+    display: block;
+    /* يعرض العنصر ككتلة */
+    width: 20em;
+    /* عرض العنصر */
+    height: 20em;
+    /* ارتفاع العنصر */
+    left: -5em;
+    /* يبعد العنصر قليلاً عن الحافة اليسرى */
+    text-align: center;
+    /* يوسّط النصوص بداخله (إن وُجدت) */
+    transition: box-shadow 0.5s ease-out;
+    /* يضيف تأثير تغيير تدريجي لظل العنصر */
+    z-index: -1;
+    /* يضع العنصر خلف الزر الأساسي */
+}
+
+.Social_media_BUTTON:hover {
+    color: #fff;
+    /* يغير لون النص إلى الأبيض عند التمرير فوق الزر */
+    border: 1px solid rgb(40, 144, 241);
+    /* يظل الإطار كما هو */
+}
+
+.Social_media_BUTTON:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
+    /* يضيف تأثير تعبئة تدريجي للخلفية داخل الزر */
+}
+
+
+.Social_mediag {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(36, 41, 46);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(36, 41, 46);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    z-index: 1;
+    
+  }
+  
+  .Social_mediag {
+    margin: 10px;
+  }
+  
+  .Social_mediag::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  .Social_mediag:hover {
+    color: #fff;
+    border: 1px solid rgb(36, 41, 46);
+  }
+  
+  .Social_mediag:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(36, 41, 46);
+  }
+.footer-content li{
+    display: inline-block;
+    /* عرض العناصر في صف واحد */
+    margin: 0 15px;
+    /* إضافة مسافة بين العناصر */
+    list-style: none;
+    /* إزالة النقاط من القائمة */
+    text-align: center;
+    /* محاذاة النص في المنتصف */
+}
+.footer-content {
+    display: flex;
+    justify-content: center; /* محاذاة الأزرار في المنتصف */
+    align-items: center; /* محاذاة الأزرار عموديًا */
+    gap: 20px; /* إضافة مسافة بين الأزرار */
+    flex-wrap: wrap; /* السماح بلف العناصر إذا لم يكن هناك مساحة كافية */
+}
+
+.Social_media_BUTTON, .Social_mediag ,YouTube {
+    width: 150px; /* توحيد عرض الأزرار */
+    height: 50px; /* توحيد ارتفاع الأزرار */
+    text-align: center; /* محاذاة النص داخل الزر */
+    display: flex;
+    justify-content: center; /* محاذاة المحتوى أفقيًا داخل الزر */
+    align-items: center; /* محاذاة المحتوى عموديًا داخل الزر */
+    box-sizing: border-box; /* حساب الحواف والمسافات ضمن الحجم الكلي */
+}
+.YouTube {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(255 0 0);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255 0 0);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .YouTube span {
+    margin: 10px;
+  }
+  
+  .YouTube::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  .YouTube:hover {
+    color: #fff;
+    border: 1px solid rgb(255 0 0);
+  }
+  
+  .YouTube:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(255 0 0);
+  }
+  

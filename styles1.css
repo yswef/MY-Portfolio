@@ -4,16 +4,12 @@ header h1 {
 
 .tab-container {
   position: relative;
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-
   padding: 3px;
-
   background-color: #dadadb;
   border-radius: 0px;
-
 }
 
 .indicator {
@@ -44,19 +40,14 @@ header h1 {
   width: 130px;
   height: 28px;
   font-weight: bold;
-
   position: relative;
   z-index: 999;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 0;
-
   font-size: 0.75rem;
   opacity: 0.6;
-
   cursor: pointer;
 }
 
@@ -90,8 +81,9 @@ header h1 {
 .dark-theme .title h2 {
   color: #f4f4f4;
 }
+
 /* تثبيت شريط التنقل */
-.tab-container  {
+.tab-container {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -101,11 +93,13 @@ header h1 {
   padding: 3px;
   background-color: #dadadb;
 }
-.switch{
+
+.switch {
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 #codeRainCanvas {
   position: fixed;
   top: 0;
@@ -124,10 +118,12 @@ header h1 {
   text-align: center;
   padding: 20px;
 }
+
 a {
   text-decoration: none;
 }
-.desplay{
-    display: none;
-    background-color: initial;
+
+.desplay {
+  display: none;
+  background-color: initial;
 }

@@ -1,603 +1,634 @@
 header {
-    background-color: #888585;
-    /* خلفية داكنة */
-    color: rgb(255, 255, 255);
-    /* النص باللون الأبيض */
-    text-align: center;
-    /* محاذاة النص في المنتصف */
-    padding: 20px 0;
-    /* إضافة مسافة داخلية */
+  background-color: #888585;
+  /* خلفية داكنة */
+  color: rgb(255, 255, 255);
+  /* النص باللون الأبيض */
+  text-align: center;
+  /* محاذاة النص في المنتصف */
+  padding: 20px 0;
+  /* إضافة مسافة داخلية */
 }
 
 .Social_media {
-    background-color: #888585; /* لون خلفية التذييل */
-    color: white; /* لون النص */
-    text-align: center; /* توسيط النصوص */
-    padding: 20px 0; /* مسافات داخلية للتذييل */
-    position: relative; /* موقع التذييل */
-    bottom: 0; /* تثبيت في الأسفل */
-    width: 100%; /* يمتد لعرض الصفحة بالكامل */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
-    /* background: transparent; */
-    /* اجعل خلفية القسم شفافة */
-    overflow: visible;
-    display: inline-block;
-    /* عرض العناصر في صف واحد */
-    margin-top: 15px; /* مسافة بين النص وأزرار الروابط الاجتماعية */
+  background-color: #888585;
+  /* لون خلفية التذييل */
+  color: white;
+  /* لون النص */
+  text-align: center;
+  /* توسيط النصوص */
+  padding: 20px 0;
+  /* مسافات داخلية للتذييل */
+  position: relative;
+  /* موقع التذييل */
+  bottom: 0;
+  /* تثبيت في الأسفل */
+  width: 100%;
+  /* يمتد لعرض الصفحة بالكامل */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  /* تأثير ظل خفيف */
+  /* background: transparent; */
+  /* اجعل خلفية القسم شفافة */
+  overflow: visible;
+  display: inline-block;
+  /* عرض العناصر في صف واحد */
+  margin-top: 15px;
+  /* مسافة بين النص وأزرار الروابط الاجتماعية */
 }
 
 section {
-    background-color: rgb(179, 178, 178);
-    /* خلفية بيضاء */
-    display: flex;
-    /* استخدام Flexbox لتنسيق الصورة والنص */
-    color: ghostwhite;
-    margin: 10px auto;
-    /* إضافة مسافة حول الأقسام */
-    padding: 20px;
-    border-radius: 8px;
-    /* إضافة حواف دائرية للأقسام */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* إضافة ظل خفيف */
-    max-width: 900px;
-    /* تحديد عرض القسم */
+  background-color: rgb(179, 178, 178);
+  /* خلفية بيضاء */
+  display: flex;
+  /* استخدام Flexbox لتنسيق الصورة والنص */
+  color: ghostwhite;
+  margin: 10px auto;
+  /* إضافة مسافة حول الأقسام */
+  padding: 20px;
+  border-radius: 8px;
+  /* إضافة حواف دائرية للأقسام */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* إضافة ظل خفيف */
+  max-width: 900px;
+  /* تحديد عرض القسم */
 }
 
 section h2 {
-    color: #3f3d46;
-    /* تغيير لون العناوين إلى اللون الداكن */
+  color: #3f3d46;
+  /* تغيير لون العناوين إلى اللون الداكن */
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-    position: relative;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  position: relative;
 }
 
 .image-container {
-    float: right;
-    /* وضع الصورة في الجانب الأيمن */
-    margin-left: 20px;
-    /* إضافة مسافة بين الصورة والنص */
+  float: right;
+  /* وضع الصورة في الجانب الأيمن */
+  margin-left: 20px;
+  /* إضافة مسافة بين الصورة والنص */
 }
 
 .image-container img {
-    width: 150px;
-    /* تحديد عرض الصورة */
-    height: auto;
-    /* الحفاظ على نسبة العرض إلى الارتفاع */
-    cursor: pointer;
-    /* تغيير شكل المؤشر إلى يد عند التمرير فوق الصورة */
+  width: 150px;
+  /* تحديد عرض الصورة */
+  height: auto;
+  /* الحفاظ على نسبة العرض إلى الارتفاع */
+  cursor: pointer;
+  /* تغيير شكل المؤشر إلى يد عند التمرير فوق الصورة */
 }
 
 .text {
-    flex: 1;
-    /* جعل النص يأخذ المساحة المتبقية */
+  flex: 1;
+  /* جعل النص يأخذ المساحة المتبقية */
 }
 
 body {
-    font-family: Arial, sans-serif;
-    /* استخدام خط من نوع آريال */
-    line-height: 1.6;
-    /* زيادة المسافة بين الأسطر */
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    /* خلفية الصفحة بلون رمادي فاتح */
-    overflow-x: hidden; /* منع التمرير الأفقي فقط */
+  font-family: Arial, sans-serif;
+  /* استخدام خط من نوع آريال */
+  line-height: 1.6;
+  /* زيادة المسافة بين الأسطر */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  /* خلفية الصفحة بلون رمادي فاتح */
+  overflow-x: hidden;
+  /* منع التمرير الأفقي فقط */
 }
 
 .custom-button {
-    float: right;
-    padding: 10px 21px;
-    background-color: #888585;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border-radius: 100px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.4s ease;
-    font-weight: bold;
-    border: 2px solid #000000;
-    /* Green */
-    margin-top: -5px;
+  float: right;
+  padding: 10px 21px;
+  background-color: #888585;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 100px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  font-weight: bold;
+  border: 2px solid #000000;
+  /* Green */
+  margin-top: -5px;
 }
 
 .custom-button:hover {
-    background-color: #a9aff8;
+  background-color: #a9aff8;
 }
 
 .custom-button:active {
-    background-color: #b0b396;
+  background-color: #b0b396;
 }
 
 /* تنسيقات الوضع المظلم */
 body.dark-theme {
-    background-color: #333;
-    /* خلفية الصفحة بلون داكن */
-    color: #f4f4f4;
-    /* لون النص */
+  background-color: #333;
+  /* خلفية الصفحة بلون داكن */
+  color: #f4f4f4;
+  /* لون النص */
 }
 
 .dark-theme header {
-    background-color: #444;
-    color: #fff;
+  background-color: #444;
+  color: #fff;
 }
 
 .dark-theme nav ul {
-    background-color: #444;
-    color: #fff;
+  background-color: #444;
+  color: #fff;
 }
 
 .dark-theme nav ul li a {
-    color: #fff;
+  color: #fff;
 }
 
 .dark-theme a:hover {
-    background-color: #555;
-    color: #fff;
+  background-color: #555;
+  color: #fff;
 }
 
 .dark-theme section {
-    background-color: #555;
-    color: #fff;
+  background-color: #555;
+  color: #fff;
 }
 
 .dark-theme section h2 {
-    color: #fff;
+  color: #fff;
 }
 
 .swiper-container {
-    width: 90%;
-    max-width: 950px;
-    height: 450px;
-    margin: 50px auto;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-top: -45px;
+  width: 90%;
+  max-width: 950px;
+  height: 450px;
+  margin: 50px auto;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: -45px;
 }
 
 .swiper-slide {
-    position: relative;
+  position: relative;
 }
 
 .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
 
 }
 
 .project-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-    border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 0 10px 10px;
 }
 
 .swiper-slide:hover .project-description {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #fff;
-    font-weight: bold;
-    position: absolute;
-    top: 54%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: transparent;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 54%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .swiper-button-next {
-    right: 10px;
+  right: 10px;
 }
 
 .swiper-button-prev {
-    left: 10px;
+  left: 10px;
 }
 
 .swiper-pagination {
-    opacity: 1;
-    transition: opacity 0.3s ease;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 
 .title {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    /* محاذاة النص إلى اليسار */
-    line-height: 1.6;
-    /* تباعد الأسطر لتحسين القراءة */
-    font-size: 33px;
-    /* حجم الخط */
-    font-weight: bold;
-    /* سمك الخط */
-    color: #3f3d46;
-    /* لون النص */
-    text-align: center;
-    /* محاذاة النص في المنتصف */
-    text-transform: uppercase;
-    /* تحويل النص إلى أحرف كبيرة */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    /* ظل النص */
-    letter-spacing: 2.5px;
-    /* تباعد الحروف */
-    margin-bottom: 20px;
-    transform: translateY(-15px);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  /* محاذاة النص إلى اليسار */
+  line-height: 1.6;
+  /* تباعد الأسطر لتحسين القراءة */
+  font-size: 33px;
+  /* حجم الخط */
+  font-weight: bold;
+  /* سمك الخط */
+  color: #3f3d46;
+  /* لون النص */
+  text-align: center;
+  /* محاذاة النص في المنتصف */
+  text-transform: uppercase;
+  /* تحويل النص إلى أحرف كبيرة */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* ظل النص */
+  letter-spacing: 2.5px;
+  /* تباعد الحروف */
+  margin-bottom: 20px;
+  transform: translateY(-15px);
 }
 
 .Social_media_BUTTON {
-    background: transparent;
-    /* يجعل خلفية الزر شفافة */
-    position: relative;
-    /* يسمح بتحديد موضع العناصر النسبية داخل الزر مثل `::before` */
-    padding: 5px 15px;
-    /* يحدد المسافة الداخلية بين النص وحدود الزر */
-    display: flex;
-    /* يجعل العنصر يستخدم نموذج flexbox لتموضع العناصر بداخله */
-    align-items: center;
-    /* يوسّط العناصر عموديًا داخل الزر */
-    font-size: 17px;
-    /* حجم النص داخل الزر */
-    font-weight: 600;
-    /* يجعل النص عريضًا نسبيًا */
-    text-decoration: none;
-    /* يزيل الخط السفلي عن النصوص داخل الزر */
-    cursor: pointer;
-    /* يجعل مؤشر الفأرة يتحول إلى شكل اليد عند التمرير فوق الزر */
-    border: 1px solid rgb(24, 119, 242);
-    /* يضيف إطارًا حول الزر بلون معين */
-    border-radius: 25px;
-    /* يجعل الزوايا مستديرة بالكامل */
-    outline: none;
-    /* يزيل الإطار الأزرق الافتراضي عند التركيز على الزر */
-    overflow: hidden;
-    /* يخفي أي محتوى يتجاوز حدود الزر */
-    color: rgb(24, 119, 242);
-    /* يحدد لون النص داخل الزر */
-    transition: color 0.3s 0.1s ease-out;
-    /* يضيف تأثير تغيير تدريجي للون النص */
-    text-align: center;
-    /* يوسّط النص أفقيًا داخل الزر */
-    z-index: 1;
+  background: transparent;
+  /* يجعل خلفية الزر شفافة */
+  position: relative;
+  /* يسمح بتحديد موضع العناصر النسبية داخل الزر مثل `::before` */
+  padding: 5px 15px;
+  /* يحدد المسافة الداخلية بين النص وحدود الزر */
+  display: flex;
+  /* يجعل العنصر يستخدم نموذج flexbox لتموضع العناصر بداخله */
+  align-items: center;
+  /* يوسّط العناصر عموديًا داخل الزر */
+  font-size: 17px;
+  /* حجم النص داخل الزر */
+  font-weight: 600;
+  /* يجعل النص عريضًا نسبيًا */
+  text-decoration: none;
+  /* يزيل الخط السفلي عن النصوص داخل الزر */
+  cursor: pointer;
+  /* يجعل مؤشر الفأرة يتحول إلى شكل اليد عند التمرير فوق الزر */
+  border: 1px solid rgb(24, 119, 242);
+  /* يضيف إطارًا حول الزر بلون معين */
+  border-radius: 25px;
+  /* يجعل الزوايا مستديرة بالكامل */
+  outline: none;
+  /* يزيل الإطار الأزرق الافتراضي عند التركيز على الزر */
+  overflow: hidden;
+  /* يخفي أي محتوى يتجاوز حدود الزر */
+  color: rgb(24, 119, 242);
+  /* يحدد لون النص داخل الزر */
+  transition: color 0.3s 0.1s ease-out;
+  /* يضيف تأثير تغيير تدريجي للون النص */
+  text-align: center;
+  /* يوسّط النص أفقيًا داخل الزر */
+  z-index: 1;
 }
 
 
 .Social_media_BUTTON span {
-    margin: 5px;
-    /* يضيف مسافة خارجية حول النصوص داخل الزر */
+  margin: 5px;
+  /* يضيف مسافة خارجية حول النصوص داخل الزر */
 }
 
 .Social_media_BUTTON::before {
-    position: absolute;
-    /* يجعل هذا العنصر يتمركز بالنسبة إلى الزر */
-    top: 0;
-    /* يبدأ من أعلى الزر */
-    left: 0;
-    /* يبدأ من يسار الزر */
-    right: 0;
-    /* ينتهي عند يمين الزر */
-    bottom: 0;
-    /* ينتهي عند أسفل الزر */
-    margin: auto;
-    /* يوسّط العنصر بشكل كامل */
-    content: '';
-    /* يضيف عنصرًا فارغًا */
-    border-radius: 50%;
-    /* يجعل العنصر دائريًا */
-    display: block;
-    /* يعرض العنصر ككتلة */
-    width: 20em;
-    /* عرض العنصر */
-    height: 20em;
-    /* ارتفاع العنصر */
-    left: -5em;
-    /* يبعد العنصر قليلاً عن الحافة اليسرى */
-    text-align: center;
-    /* يوسّط النصوص بداخله (إن وُجدت) */
-    transition: box-shadow 0.5s ease-out;
-    /* يضيف تأثير تغيير تدريجي لظل العنصر */
-    z-index: -1;
-    /* يضع العنصر خلف الزر الأساسي */
+  position: absolute;
+  /* يجعل هذا العنصر يتمركز بالنسبة إلى الزر */
+  top: 0;
+  /* يبدأ من أعلى الزر */
+  left: 0;
+  /* يبدأ من يسار الزر */
+  right: 0;
+  /* ينتهي عند يمين الزر */
+  bottom: 0;
+  /* ينتهي عند أسفل الزر */
+  margin: auto;
+  /* يوسّط العنصر بشكل كامل */
+  content: '';
+  /* يضيف عنصرًا فارغًا */
+  border-radius: 50%;
+  /* يجعل العنصر دائريًا */
+  display: block;
+  /* يعرض العنصر ككتلة */
+  width: 20em;
+  /* عرض العنصر */
+  height: 20em;
+  /* ارتفاع العنصر */
+  left: -5em;
+  /* يبعد العنصر قليلاً عن الحافة اليسرى */
+  text-align: center;
+  /* يوسّط النصوص بداخله (إن وُجدت) */
+  transition: box-shadow 0.5s ease-out;
+  /* يضيف تأثير تغيير تدريجي لظل العنصر */
+  z-index: -1;
+  /* يضع العنصر خلف الزر الأساسي */
 }
 
 .Social_media_BUTTON:hover {
-    color: #fff;
-    /* يغير لون النص إلى الأبيض عند التمرير فوق الزر */
-    border: 1px solid rgb(40, 144, 241);
-    /* يظل الإطار كما هو */
+  color: #fff;
+  /* يغير لون النص إلى الأبيض عند التمرير فوق الزر */
+  border: 1px solid rgb(40, 144, 241);
+  /* يظل الإطار كما هو */
 }
 
 .Social_media_BUTTON:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(24, 119, 242);
-    /* يضيف تأثير تعبئة تدريجي للخلفية داخل الزر */
+  box-shadow: inset 0 0 0 10em rgb(24, 119, 242);
+  /* يضيف تأثير تعبئة تدريجي للخلفية داخل الزر */
 }
 
 
 .Social_mediag {
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(36, 41, 46);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(36, 41, 46);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    z-index: 1;
-    
-  }
-  
-  .Social_mediag {
-    margin: 10px;
-  }
-  
-  .Social_mediag::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: "";
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
-  .Social_mediag:hover {
-    color: #fff;
-    border: 1px solid rgb(36, 41, 46);
-  }
-  
-  .Social_mediag:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(36, 41, 46);
-  }
-.footer-content li{
-    display: inline-block;
-    /* عرض العناصر في صف واحد */
-    margin: 0 15px;
-    /* إضافة مسافة بين العناصر */
-    list-style: none;
-    /* إزالة النقاط من القائمة */
-    text-align: center;
-    /* محاذاة النص في المنتصف */
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(36, 41, 46);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(36, 41, 46);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  z-index: 1;
+
 }
+
+.Social_mediag {
+  margin: 10px;
+}
+
+.Social_mediag::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.Social_mediag:hover {
+  color: #fff;
+  border: 1px solid rgb(36, 41, 46);
+}
+
+.Social_mediag:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(36, 41, 46);
+}
+
+.footer-content li {
+  display: inline-block;
+  /* عرض العناصر في صف واحد */
+  margin: 0 15px;
+  /* إضافة مسافة بين العناصر */
+  list-style: none;
+  /* إزالة النقاط من القائمة */
+  text-align: center;
+  /* محاذاة النص في المنتصف */
+}
+
 .footer-content {
-    display: flex;
-    justify-content: center; /* محاذاة الأزرار في المنتصف */
-    align-items: center; /* محاذاة الأزرار عموديًا */
-    gap: 20px; /* إضافة مسافة بين الأزرار */
-    flex-wrap: wrap; /* السماح بلف العناصر إذا لم يكن هناك مساحة كافية */
+  display: flex;
+  justify-content: center;
+  /* محاذاة الأزرار في المنتصف */
+  align-items: center;
+  /* محاذاة الأزرار عموديًا */
+  gap: 20px;
+  /* إضافة مسافة بين الأزرار */
+  flex-wrap: wrap;
+  /* السماح بلف العناصر إذا لم يكن هناك مساحة كافية */
 }
-.footer-content li a{
-    text-decoration: none;
+
+.footer-content li a {
+  text-decoration: none;
 
 }
 
-.Social_media_BUTTON, .Social_mediag ,.YouTube,.Telegram ,.WhatsApp{
-    width: 150px; /* توحيد عرض الأزرار */
-    height: 50px; /* توحيد ارتفاع الأزرار */
-    text-align: center; /* محاذاة النص داخل الزر */
-    display: flex;
-    justify-content: center; /* محاذاة المحتوى أفقيًا داخل الزر */
-    align-items: center; /* محاذاة المحتوى عموديًا داخل الزر */
-    box-sizing: border-box; /* حساب الحواف والمسافات ضمن الحجم الكلي */
+.Social_media_BUTTON,
+.Social_mediag,
+.YouTube,
+.Telegram,
+.WhatsApp {
+  width: 150px;
+  /* توحيد عرض الأزرار */
+  height: 50px;
+  /* توحيد ارتفاع الأزرار */
+  text-align: center;
+  /* محاذاة النص داخل الزر */
+  display: flex;
+  justify-content: center;
+  /* محاذاة المحتوى أفقيًا داخل الزر */
+  align-items: center;
+  /* محاذاة المحتوى عموديًا داخل الزر */
+  box-sizing: border-box;
+  /* حساب الحواف والمسافات ضمن الحجم الكلي */
 }
+
 .YouTube {
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(255 0 0);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(255 0 0);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    z-index: 1;
-  }
-  
-  .YouTube span {
-    margin: 10px;
-  }
-  
-  .YouTube::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: "";
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
-  .YouTube:hover {
-    color: #fff;
-    border: 1px solid rgb(255 0 0);
-  }
-  
-  .YouTube:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(255 0 0);
-  }
-  .Telegram {
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(36, 161, 222);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(36, 161, 222);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    z-index: 1;
-  }
-  
-  .Telegram span {
-    margin: 10px;
-  }
-  
-  .Telegram::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: "";
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
-  .Telegram:hover {
-    color: #fff;
-    border: 1px solid rgb(36, 161, 222);
-  }
-  
-  .Telegram:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(36, 161, 222);
-  }
-  .WhatsApp {
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(37, 211, 102);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(37, 211, 102);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    z-index: 1;
-  }
-  
-  .WhatsApp span {
-    margin: 10px;
-  }
-  
-  .WhatsApp::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: "";
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
-  .WhatsApp:hover {
-    color: #fff;
-    border: 1px solid rgb(37, 211, 102);
-  }
-  
-  .WhatsApp:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(37, 211, 102);
-  }
-  .Discord {
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgba(88, 101, 242, 1);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgba(88, 101, 242, 1);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    z-index: 1;
-  }
-  
-  .Discord span {
-    margin: 10px;
-  }
-  
-  .Discord::before {
-    position: absolute;
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(255 0 0);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(255 0 0);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  z-index: 1;
+}
+
+.YouTube span {
+  margin: 10px;
+}
+
+.YouTube::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.YouTube:hover {
+  color: #fff;
+  border: 1px solid rgb(255 0 0);
+}
+
+.YouTube:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(255 0 0);
+}
+
+.Telegram {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(36, 161, 222);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(36, 161, 222);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  z-index: 1;
+}
+
+.Telegram span {
+  margin: 10px;
+}
+
+.Telegram::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.Telegram:hover {
+  color: #fff;
+  border: 1px solid rgb(36, 161, 222);
+}
+
+.Telegram:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(36, 161, 222);
+}
+
+.WhatsApp {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(37, 211, 102);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(37, 211, 102);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  z-index: 1;
+}
+
+.WhatsApp span {
+  margin: 10px;
+}
+
+.WhatsApp::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.WhatsApp:hover {
+  color: #fff;
+  border: 1px solid rgb(37, 211, 102);
+}
+
+.WhatsApp:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(37, 211, 102);
+}
+
+.Discord {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgba(88, 101, 242, 1);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgba(88, 101, 242, 1);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  z-index: 1;
+}
+
+.Discord span {
+  margin: 10px;
+}
+
+.Discord::before {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -612,141 +643,142 @@ body.dark-theme {
   text-align: center;
   transition: box-shadow 0.5s ease-out;
   z-index: -1;
-  }
-  
-  .Discord:hover {
-    color: #fff;
-    border: 1px solid rgba(88, 101, 242, 1);
-  }
-  
-  .Discord:hover::before {
-    box-shadow: inset 0 0 0 10em rgba(88, 101, 242, 1);
-  }
-  .Instragram{
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(255,0,0);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(255,0,0);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    z-index: 1;
-  }
-  
-  .Instragram span {
-    margin: 10px;
-  }
-  
-  .Instragram::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  
-  .Instragram:hover {
-    color: #fff;
-    border: 1px solid rgb(255,0,0);
-  }
-  
-  .Instragram:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
-  }
-  .switch {
-    font-size: 17px;
-    position: relative;
-    /* display: inline-block; */
-    float: right;
-    width: 3.5em;
-    height: 2em;
-    cursor: pointer;
-    background-color: #dadadb;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    --background: #20262c;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--background);
-    transition: 0.5s;
-    border-radius: 30px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 1.4em;
-    width: 1.4em;
-    border-radius: 50%;
-    left: 10%;
-    bottom: 15%;
-    box-shadow: inset 8px -4px 0px 0px #ececd9, -4px 1px 4px 0px #dadada;
-    background: var(--background);
-    transition: 0.5s;
-  }
-  
-  .decoration {
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    right: 20%;
-    top: 15%;
-    background: #e5f041e6;
-    backdrop-filter: blur(10px);
-    transition: all 0.5s;
-    box-shadow: -7px 10px 0 #e5f041e6, 8px 15px 0 #e5f041e6, -17px 1px 0 #e5f041e6,
-      -20px 10px 0 #e5f041e6, -7px 23px 0 #e5f041e6, -15px 25px 0 #e5f041e6;
-  }
-  
-  input:checked ~ .decoration {
-    transform: translateX(-20px);
-    width: 10px;
-    height: 10px;
-    background: white;
-    box-shadow: -12px 0 0 white, -6px 0 0 1.6px white, 5px 15px 0 1px white,
-      1px 17px 0 white, 10px 17px 0 white;
-  }
-  
-  input:checked + .slider {
-    background-color: #5494de;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(100%);
-    box-shadow: inset 15px -4px 0px 15px #efdf2b, 0 0 10px 0px #efdf2b;
-  }
-  
+}
+
+.Discord:hover {
+  color: #fff;
+  border: 1px solid rgba(88, 101, 242, 1);
+}
+
+.Discord:hover::before {
+  box-shadow: inset 0 0 0 10em rgba(88, 101, 242, 1);
+}
+
+.Instragram {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(255, 0, 0);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  z-index: 1;
+}
+
+.Instragram span {
+  margin: 10px;
+}
+
+.Instragram::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.Instragram:hover {
+  color: #fff;
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.Instragram:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  /* display: inline-block; */
+  float: right;
+  width: 3.5em;
+  height: 2em;
+  cursor: pointer;
+  background-color: #dadadb;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #20262c;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #ececd9, -4px 1px 4px 0px #dadada;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+.decoration {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  right: 20%;
+  top: 15%;
+  background: #e5f041e6;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s;
+  box-shadow: -7px 10px 0 #e5f041e6, 8px 15px 0 #e5f041e6, -17px 1px 0 #e5f041e6,
+    -20px 10px 0 #e5f041e6, -7px 23px 0 #e5f041e6, -15px 25px 0 #e5f041e6;
+}
+
+input:checked~.decoration {
+  transform: translateX(-20px);
+  width: 10px;
+  height: 10px;
+  background: white;
+  box-shadow: -12px 0 0 white, -6px 0 0 1.6px white, 5px 15px 0 1px white,
+    1px 17px 0 white, 10px 17px 0 white;
+}
+
+input:checked+.slider {
+  background-color: #5494de;
+}
+
+input:checked+.slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #efdf2b, 0 0 10px 0px #efdf2b;
+}

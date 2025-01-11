@@ -3,14 +3,14 @@ const currentTheme = localStorage.getItem('theme');
 
 if (currentTheme === 'dark') {
     document.body.classList.add('dark-theme');
-    themeToggle.textContent = 'Light Mode';
+    // themeToggle.textContent = 'Light Mode';
 }
 
 themeToggle.addEventListener('click', function () {
     document.body.classList.toggle('dark-theme');
     const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
     localStorage.setItem('theme', theme);
-    this.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+    // this.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
 });
 const canvas = document.getElementById('codeRainCanvas');
         const ctx = canvas.getContext('2d');
@@ -51,7 +51,7 @@ const canvas = document.getElementById('codeRainCanvas');
             document.body.classList.toggle('light-theme');
         }
 
-        setInterval(drawRain, 50);
+        setInterval(drawRain, 45);
 
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
@@ -96,6 +96,8 @@ targets.forEach((target) => {
     if (target) observer.observe(target);
 });
 
+
+//يجب ان يكون اخر قسم لكي لا يتعطل الموقع اثناء تشغيلة اوفلاين 
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 20,

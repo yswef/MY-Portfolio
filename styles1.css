@@ -119,11 +119,6 @@ header h1 {
   padding: 20px;
 }
 
-a {
-  text-decoration: none;
-}
-
-.desplay {
-  display: none;
-  background-color: initial;
+.dark-theme footer{
+  background-color: #444;
 }

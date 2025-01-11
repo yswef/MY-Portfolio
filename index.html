@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,34 +12,36 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- ملف CSS الخاص -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
 </head>
 
 <body>
+    <canvas id="codeRainCanvas"></canvas>
     <header>
+
         <h1>MY Portfolio</h1>
         <h2>I am<br>Yusef Alhmzy</h2>
 
           
     </header>
-    <nav>
-        <ul>
-            <li><a href="#section1">About us</a></li>
-            <li><a href="#title">Projects</a></li>
-            <li><a href="#Social_media">Social media</a></li>
-            <!-- <li><a href="#section4">القسم 4</a></li> -->
+    <label for="switch" class="switch">
+        <input id="switch" type="checkbox" />
+        <span class="slider"></span>
+        <span class="decoration"></span>
+      </label>
+    <div class="tab-container">
+        <input type="radio" name="tab" id="tab1" class="tab tab--1" onclick="scrollToSection('Abut_me')" />
+        <label class="tab_label" for="tab1">Abut me</label>
+        <input type="radio" name="tab" id="tab2" class="tab tab--2" onclick="scrollToSection('title')" />
+        <label class="tab_label" for="tab2">Projects</label>
+        <input type="radio" name="tab" id="tab3" class="tab tab--3" onclick="scrollToSection('Social_media')" />
+        <label class="tab_label" for="tab3">My accounts</label>
+      
+        <div class="indicator"></div>
+      </div>
 
-
-            <!-- <button id="toggle-theme" class="custom-button">Dark Mode</button> -->
-            <label for="switch" class="switch">
-                <input id="switch" type="checkbox" />
-                <span class="slider"></span>
-                <span class="decoration"></span>
-              </label>
-        </ul>
-
-    </nav>
     <main>
-        <section id="section1">
+        <section id="Abut_me">
             <div class="txt">
                 <h2>Who is Yusef</h2>
                 <p>I am <strong>Yusef Al-Hamzi,<br></strong>
@@ -48,7 +50,7 @@
                     born on <strong>June 26, 2006</strong>.<br>
                     I am currently a <strong>university student</strong> and work as a software engineer, specializing
                     in <strong>Backend Development</strong> using <strong>Python.</strong><br>
-                    I am also learning HTML and CSS to expand my skills in <strong>web development</strong>.<br>
+                    I am also learning HTML,CSS and to expand my skills in <strong>web development</strong>.<br>
                     I love technical challenges and am always striving to improve myself and learn new technologies.<br>
                 </p>
                 <p>
@@ -63,7 +65,7 @@
                 </a>
             </div>
         </section>
-        <div class="title" id="title">
+            <div class="title" id="title">
             <h2>My Projects</h2>
         </div>
         <div class="swiper-container">
@@ -194,10 +196,10 @@
             <p>All rights reserved © Yusef 2025.</p>
         </footer>
     </main>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- ملف JS الخاص -->
     <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

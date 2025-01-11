@@ -38,3 +38,87 @@ swiper.el.addEventListener('mouseenter', function () {
 swiper.el.addEventListener('mouseleave', function () {
     swiper.autoplay.start(); // إعادة تشغيل التمرير التلقائي عند مغادرة الماوس
 });
+//خلفية مطر الاكواد 
+const canvas = document.getElementById('codeRainCanvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const fontSize = 16;
+        const columns = Math.floor(canvas.width / fontSize);
+        const drops = Array(columns).fill(1);
+        const codes = ['HTML', 'CSS', 'JS', 'Python', 'Code', 'if', 'else', '<>', '{}','print'];
+
+        function drawRain() {
+            const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+            ctx.fillStyle = theme === 'dark' ? 'rgba(51, 51, 51, 0.1)' : 'rgba(244, 244, 244, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = theme === 'dark' ? 'rgba(255, 255, 255, 0.5)' : 'rgba(0, 0, 0, 0.5)';
+            ctx.font = `${fontSize}px monospace`;
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = codes[Math.floor(Math.random() * codes.length)];
+                const x = i * fontSize;
+                const y = drops[i] * fontSize;
+
+                ctx.fillText(text, x, y);
+
+                if (y > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+
+                drops[i]++;
+            }
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            document.body.classList.toggle('light-theme');
+        }
+
+        setInterval(drawRain, 50);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+        
+        // تحديد جميع العناصر التي تريد مراقبتها
+const targets = [
+    document.getElementById("Abut_me"),   // القسم الأول باستخدام id
+    document.querySelector(".title"),    // القسم الثاني باستخدام class
+    document.querySelector("footer")     // القسم الثالث باستخدام نوع العنصر
+];
+
+// تحديد الأزرار الخاصة بالأقسام
+const tabs = document.querySelectorAll(".tab");
+
+// مراقبة العناصر باستخدام Intersection Observer
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // العثور على العنصر المرئي
+                const activeElement = entry.target;
+
+                // تحديث التحديد في الأزرار
+                tabs.forEach((tab) => {
+                    // تحقق إذا كان هذا الزر مرتبطًا بالعنصر المرئي
+                    if (tab.id === `tab${targets.indexOf(activeElement) + 1}`) {
+                        tab.checked = true; // تفعيل الزر المرتبط
+                    }
+                });
+            }
+        });
+    },
+    {
+        threshold: 0.6, // التفعيل عند ظهور 60% من العنصر
+    }
+);
+
+// مراقبة كل عنصر في قائمة الأهداف
+targets.forEach((target) => {
+    if (target) observer.observe(target);
+});

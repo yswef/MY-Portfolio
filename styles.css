@@ -8,6 +8,7 @@ header {
     padding: 20px 0;
     /* إضافة مسافة داخلية */
 }
+
 .Social_media {
     background-color: #888585; /* لون خلفية التذييل */
     color: white; /* لون النص */
@@ -23,41 +24,6 @@ header {
     display: inline-block;
     /* عرض العناصر في صف واحد */
     margin-top: 15px; /* مسافة بين النص وأزرار الروابط الاجتماعية */
-}
-
-nav ul {
-    background-color: #888585;
-    /* خلفية داكنة */
-    color: rgb(255, 255, 255);
-    /* النص باللون الأبيض */
-    list-style: none;
-    /* إزالة النقاط من القائمة */
-    padding: 6px;
-    text-align: center;
-    /* محاذاة النص في المنتصف */
-}
-
-nav ul li {
-    display: inline-block;
-    /* عرض العناصر في صف واحد */
-    margin: 0 15px;
-    /* إضافة مسافة بين العناصر */
-}
-
-nav ul li a {
-    color: rgb(0, 0, 0);
-    /* تغيير لون الروابط إلى الأبيض */
-    text-decoration: none;
-    /* إزالة التسطير تحت الرابط */
-    font-weight: bold;
-    /* جعل النص عريض */
-}
-
-a:hover {
-    text-decoration: underline;
-    /* إضافة التسطير عند مرور الماوس على الرابط */
-    background-color: #888585;
-    color: white;
 }
 
 section {
@@ -120,6 +86,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     /* خلفية الصفحة بلون رمادي فاتح */
+    overflow-x: hidden; /* منع التمرير الأفقي فقط */
 }
 
 .custom-button {
@@ -231,11 +198,12 @@ body.dark-theme {
 .swiper-button-next,
 .swiper-button-prev {
     color: #fff;
+    font-weight: bold;
     position: absolute;
-    top: 50%;
+    top: 54%;
     transform: translateY(-50%);
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -270,7 +238,7 @@ body.dark-theme {
     /* حجم الخط */
     font-weight: bold;
     /* سمك الخط */
-    color: #050505;
+    color: #3f3d46;
     /* لون النص */
     text-align: center;
     /* محاذاة النص في المنتصف */
@@ -712,6 +680,7 @@ body.dark-theme {
     width: 3.5em;
     height: 2em;
     cursor: pointer;
+    background-color: #dadadb;
   }
   
   /* Hide default HTML checkbox */

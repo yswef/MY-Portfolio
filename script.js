@@ -13,52 +13,76 @@ themeToggle.addEventListener('click', function () {
     // this.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
 });
 const canvas = document.getElementById('codeRainCanvas');
-        const ctx = canvas.getContext('2d');
+const ctx = canvas.getContext('2d');
 
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-        const fontSize = 16;
-        const columns = Math.floor(canvas.width / fontSize);
-        const drops = Array(columns).fill(1);
-        const codes = ['HTML', 'CSS', 'JS', 'Python', 'Code', 'if', 'else', '<>', '{}','print'];
-
-        function drawRain() {
-            const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-            ctx.fillStyle = theme === 'dark' ? 'rgba(51, 51, 51, 0.1)' : 'rgba(244, 244, 244, 0.1)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            ctx.fillStyle = theme === 'dark' ? 'rgba(255, 255, 255, 0.5)' : 'rgba(0, 0, 0, 0.5)';
-            ctx.font = `${fontSize}px monospace`;
-
-            for (let i = 0; i < drops.length; i++) {
-                const text = codes[Math.floor(Math.random() * codes.length)];
-                const x = i * fontSize;
-                const y = drops[i] * fontSize;
-
-                ctx.fillText(text, x, y);
-
-                if (y > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-
-                drops[i]++;
-            }
+const fontSize = 16;
+const columns = Math.floor(canvas.width / fontSize);
+const drops = Array(columns).fill(1);
+const codes = ['HTML', 'CSS', 'JS', 'Python', 'Code', 'if', 'else', '<>', '{}', 'print'];
+function drawRain() {
+    const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+    ctx.fillStyle = theme === 'dark' ? 'rgba(51, 51, 51, 0.1)' : 'rgba(244, 244, 244, 0.1)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = theme === 'dark' ? 'rgba(255, 255, 255, 0.5)' : 'rgba(0, 0, 0, 0.5)';
+    ctx.font = `${fontSize}px monospace`;
+    for (let i = 0; i < drops.length; i++) {
+        const text = codes[Math.floor(Math.random() * codes.length)];
+        const x = i * fontSize;
+        const y = drops[i] * fontSize;
+        ctx.fillText(text, x, y);
+        if (y > canvas.height && Math.random() > 0.975) {
+            drops[i] = 0;
         }
+        drops[i]++;
+    }
+}
+function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+    document.body.classList.toggle('light-theme');
+}
+setInterval(drawRain, 70);
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
 
-        function toggleTheme() {
-            document.body.classList.toggle('dark-theme');
-            document.body.classList.toggle('light-theme');
-        }
+    // إعداد الانتقال المخصص
+    const targetPosition = section.offsetTop; // المسافة من أعلى الصفحة إلى القسم
+    const startPosition = window.scrollY; // الموضع الحالي
+    const distance = targetPosition - startPosition; // المسافة المراد التمرير إليها
+    const duration = 1000; // مدة الانتقال (بالملي ثانية)
+    let startTime = null;
 
-        setInterval(drawRain, 45);
+    function animationScroll(currentTime) {
+        if (!startTime) startTime = currentTime;
 
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
-        
-        // تحديد جميع العناصر التي تريد مراقبتها
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+
+        window.scrollTo(0, run);
+
+        if (timeElapsed < duration) requestAnimationFrame(animationScroll);
+    }
+
+    // دالة تخصيص الحركة (Easing Function)
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animationScroll);
+}
+
+const sections = document.querySelectorAll("section, footer, .custom-class, [id]"); // مراقبة الأقسام والكلاسات والمعرفات
+
+// تحديد جميع العناصر التي تريد مراقبتها
 const targets = [
     document.getElementById("Abut_me"),   // القسم الأول باستخدام id
     document.querySelector(".title"),    // القسم الثاني باستخدام class
@@ -87,7 +111,7 @@ const observer = new IntersectionObserver(
         });
     },
     {
-        threshold: 0.6, // التفعيل عند ظهور 60% من العنصر
+        threshold: 1, // التفعيل عند ظهور 60% من العنصر
     }
 );
 

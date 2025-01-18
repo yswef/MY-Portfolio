@@ -87,7 +87,7 @@ section h2 {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', 'Tahoma', sans-serif; /* خطوط تدعم اللغتين */
   /* استخدام خط من نوع آريال */
   line-height: 1.6;
   /* زيادة المسافة بين الأسطر */

@@ -122,3 +122,56 @@ header h1 {
 .dark-theme footer{
   background-color: #444;
 }
+
+.language-switcher select {
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #b3b3b3; /* لون الخلفية الرمادي الفاتح */
+  border: 2px solid #888585; /* لون الحدود الداكنة لتتناسب مع خلفية الهيدر والتذييل */
+  color: white; /* لون النص أبيض لتباين واضح */
+  border-radius: 31px;
+  cursor: pointer;
+  appearance: none; /* إزالة المظهر الافتراضي */
+  outline: none;
+  transition: all 0.3s ease;
+  float: right; /* محاذاة الزر إلى اليمين */
+  margin-top: -1px;
+}
+
+/* تأثير التمرير (Hover) */
+.language-switcher select:hover {
+  border-color: #6c6b6b; /* تغيير لون الحدود عند التمرير لدرجة أغمق */
+  box-shadow: 0 0 8px rgba(108, 107, 107, 0.5); /* إضافة ظل خفيف داكن */
+}
+
+/* تأثير التركيز (Focus) */
+.language-switcher select:focus {
+  border-color: #3f3d46; /* تغيير لون الحدود عند التركيز إلى اللون الداكن */
+  box-shadow: 0 0 12px rgba(63, 61, 70, 0.7); /* إضافة ظل داكن عند التركيز */
+}
+
+.language-switcher{
+  font-size: 17px;
+  position: relative;
+  z-index: 2000;
+  /* display: inline-block; */
+  float: right;
+  width: 3.5em;
+  height: 2em;
+  cursor: pointer;
+  background-color: #dadadb;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+.language-switcher select option {
+  border-radius: 20px; /* جعل الخيارات داخل القائمة بحواف دائرية */}
+.dark-theme .language-switcher{
+  background-color: #747373;;
+}
+.dark-theme .language-switcher select{
+  background-color: #b3b3b3; /* لون الخلفية الرمادي الفاتح */
+  border: 2px solid #888585;
+  color: #000;
+}

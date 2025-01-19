@@ -1,17 +1,22 @@
 const themeToggle = document.getElementById('switch');
-const currentTheme = localStorage.getItem('theme');
+const userPreferredTheme = localStorage.getItem('theme');
 
-if (currentTheme === 'dark') {
-    document.body.classList.add('dark-theme');
-    // themeToggle.textContent = 'Light Mode';
+// إذا تم تخزين تفضيل للمستخدم، استخدمه
+if (userPreferredTheme) {
+    document.body.classList.toggle('dark-theme', userPreferredTheme === 'dark');
+} else {
+    // إذا لم يتم تحديد تفضيل، استخدم إعداد النظام
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.body.classList.toggle('dark-theme', systemPrefersDark);
 }
 
+// حدث تبديل الوضع عند النقر على المفتاح
 themeToggle.addEventListener('click', function () {
     document.body.classList.toggle('dark-theme');
     const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
     localStorage.setItem('theme', theme);
-    // this.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
 });
+
 const canvas = document.getElementById('codeRainCanvas');
 const ctx = canvas.getContext('2d');
 

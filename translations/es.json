@@ -1,0 +1,15 @@
+{
+    "MY_Portfolio": "Mi Portafolio",
+    "name": "Soy<br>Yusef Alhmzy",
+    "Abut_me": "Sobre mí",
+    "Projects": "Proyectos",
+    "My accounts": "Mis cuentas",
+    "Abut_meT1": "Quién es Yusef",
+    "intro": "Soy <strong>Yusef Al-Hamzi,<br></strong>un chico ambicioso,<strong>de 18 años</strong><br>nacido el <strong>26 de junio de 2006</strong>.<br>Actualmente soy <strong>estudiante universitario</strong> y trabajo como ingeniero de software, especializado en el <strong>desarrollo Backend</strong> utilizando <strong>Python.</strong><br>También estoy aprendiendo HTML, CSS y JavaScript para expandir mis habilidades en <strong>desarrollo web</strong>.<br>Me encantan los desafíos técnicos y siempre estoy esforzándome por mejorar y aprender nuevas tecnologías.<br>",
+    "dream": "Sueño con convertirme en un experto en ingeniería y programación, contribuyendo al desarrollo de tecnologías que faciliten la vida de las personas.<br>Soy optimista sobre el futuro y estoy dispuesto a poner todo el esfuerzo necesario para lograr mis sueños.",
+    "My Projects": "Mis Proyectos",
+    "Project 1": "MailboxSplitter es una aplicación de consola basada en Python que procesa y organiza archivos .inbox. Permite a los usuarios dividir un archivo de correo en archivos más pequeños y categorizados según criterios específicos como remitente, asunto o fecha. La aplicación es ligera, eficiente y está diseñada para una organización rápida de grandes archivos de correo.",
+    "Project 2": "Aplicación de gestión de tareas y productividad Una aplicación de consola en Python para gestionar tareas, rastrear el tiempo y mejorar la productividad. Las características incluyen perfiles de usuario, priorización de tareas, un temporizador Pomodoro, seguimiento del uso del teléfono e informes de productividad. Construida con principios de POO como herencia y encapsulación, perfecta para entusiastas de la productividad.",
+    "Project 3": "PassSafe es una herramienta poderosa que verifica la seguridad de tus contraseñas, ayudándote a crear contraseñas seguras fácilmente. Con comentarios instantáneos y consejos de mejora, PassSafe asegura que tus cuentas en línea estén protegidas contra accesos no autorizados.",
+    "rights": "Todos los derechos reservados © Yusef 2025."
+}

@@ -1,0 +1,15 @@
+{
+    "MY_Portfolio": "Mon Portfolio",
+    "name": "Je suis<br>Yusef Alhmzy",
+    "Abut_me": "À propos de moi",
+    "Projects": "Projets",
+    "My accounts": "Mes comptes",
+    "Abut_meT1": "Qui est Yusef",
+    "intro": "Je suis <strong>Yusef Al-Hamzi,<br></strong>un garçon ambitieux,<strong>âgé de 18 ans</strong><br>né le <strong>26 juin 2006</strong>.<br>Je suis actuellement <strong>étudiant universitaire</strong> et je travaille comme ingénieur logiciel, spécialisé dans le <strong>développement Backend</strong> en utilisant <strong>Python.</strong><br>J'apprends également HTML, CSS et JavaScript pour élargir mes compétences en <strong>développement web</strong>.<br>J'aime les défis techniques et je m'efforce toujours de m'améliorer et d'apprendre de nouvelles technologies.<br>",
+    "dream": "Je <strong>rêve</strong> de devenir expert en ingénierie et programmation, en contribuant au développement de technologies qui facilitent la vie des gens.<br>Je suis optimiste quant à l'avenir et prêt à fournir tous les efforts nécessaires pour réaliser mes rêves.",
+    "My Projects": "Mes Projets",
+    "Project 1": "MailboxSplitter est une application console basée sur Python qui traite et organise les fichiers .inbox. Elle permet aux utilisateurs de diviser un fichier de boîte aux lettres en fichiers plus petits et catégorisés selon des critères spécifiques comme l'expéditeur, le sujet ou la date. L'application est légère, efficace et conçue pour une organisation rapide de grandes boîtes aux lettres.",
+    "Project 2": "Application de gestion des tâches et de productivité Une application console Python pour gérer les tâches, suivre le temps et améliorer la productivité. Les fonctionnalités incluent des profils utilisateur, la priorisation des tâches, un minuteur Pomodoro, le suivi de l'utilisation du téléphone et des rapports de productivité. Construite avec des principes POO comme l'héritage et l'encapsulation, parfaite pour les passionnés de productivité.",
+    "Project 3": "PassSafe est un outil puissant qui vérifie la solidité de vos mots de passe, vous aidant à en créer des sécurisés facilement. Avec des retours instantanés et des conseils d'amélioration, PassSafe garantit la protection de vos comptes en ligne contre les accès non autorisés.",
+    "rights": "Tous droits réservés © Yusef 2025."
+}

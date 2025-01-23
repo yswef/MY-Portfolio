@@ -1,0 +1,445 @@
+/* أنماط عامة */
+header {
+  background-color: #888585;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.Social_media {
+  background-color: #888585;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+section {
+  background-color: rgb(179, 178, 178);
+  display: flex;
+  color: #3f3d46;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+}
+
+section h2 {
+  color: #3f3d46;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  position: relative;
+}
+
+.image-container {
+  float: right;
+  margin-left: 20px;
+}
+
+.image-container img {
+  width: 150px;
+  height: auto;
+}
+
+.text {
+  flex: 1;
+}
+
+body {
+  font-family: 'Arial', 'Tahoma', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+.custom-button {
+  float: right;
+  padding: 10px 21px;
+  background-color: #888585;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 100px;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.4s ease;
+  font-weight: bold;
+  border: 2px solid #000000;
+  margin-top: -5px;
+}
+
+.custom-button:hover {
+  background-color: #a9aff8;
+}
+
+.custom-button:active {
+  background-color: #b0b396;
+}
+
+/* الوضع المظلم */
+body.dark-theme {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.dark-theme header {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-theme nav ul {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-theme nav ul li a {
+  color: #fff;
+}
+
+.dark-theme a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-theme section {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-theme section h2 {
+  color: #fff;
+}
+
+/* Swiper */
+.swiper-container {
+  width: 90%;
+  max-width: 950px;
+  height: 450px;
+  margin: 50px auto;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: -45px;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 0 10px 10px;
+}
+
+.swiper-slide:hover .project-description {
+  opacity: 1;
+  visibility: visible;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000000;
+  font-weight: bold;
+  position: absolute;
+  top: 54%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-pagination {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.title {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 33px;
+  font-weight: bold;
+  color: #3f3d46;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2.5px;
+  margin-bottom: 20px;
+  transform: translateY(-15px);
+}
+
+/* أزرار السوشيال ميديا الموحدة */
+.social-btn {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1;
+  width: 150px;
+  height: 50px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  margin: 10px;
+  --btn-color: #000;
+  --hover-color: #fff;
+  margin: 0;         /* إزالة الهوامش الزائدة */
+  padding: 8px 20px; /* تعديل المسافة الداخلية */
+  min-width: 120px;  /* تحديد عرض أدنى للزر */
+  transition: all 0.3s ease !important; /* تفعيل الانتقالات */
+  white-space: nowrap; /* منع تفكيك النص */
+}
+
+.social-btn::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.social-btn:hover {
+  color: var(--hover-color);
+  transform: translateY(-3px);
+}
+
+.social-btn:hover::before {
+  box-shadow: inset 0 0 0 10em var(--btn-color);
+}
+
+/* ألوان مخصصة لكل زر */
+.facebook {
+  border: 1px solid #1877f2;
+  color: #1877f2;
+  --btn-color: #1877f2;
+}
+
+.github {
+  border: 1px solid #24292e;
+  color: #24292e;
+  --btn-color: #24292e;
+}
+
+.youtube {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  --btn-color: #ff0000;
+}
+
+.telegram {
+  border: 1px solid #24a1de;
+  color: #24a1de;
+  --btn-color: #24a1de;
+}
+
+.whatsapp {
+  border: 1px solid #25d366;
+  color: #25d366;
+  --btn-color: #25d366;
+}
+
+.instagram {
+  border: 1px solid #E1306C;
+  color: #E1306C;
+  --btn-color: #E1306C; /* اللون الاحتياطي */
+  position: relative;
+  overflow: hidden;
+}
+
+.instagram::before {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+}
+
+.instagram:hover::before {
+  width: 20em;
+  height: 20em;
+  opacity: 1;
+}
+
+.instagram:hover {
+  color: white !important;
+}
+
+.discord {
+  border: 1px solid #5865f2;
+  color: #5865f2;
+  --btn-color: #5865f2;
+}
+
+/* باقي الأنماط */
+.switch {
+  font-size: 19px;
+  position: relative;
+  float: right;
+  width: 3.5em;
+  height: 2em;
+  background-color: #dadadb;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  --background: #20262c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #ececd9, -4px 1px 4px 0px #dadada;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+.decoration {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  right: 20%;
+  top: 15%;
+  background: #e5f041e6;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s;
+  box-shadow: -7px 10px 0 #e5f041e6, 8px 15px 0 #e5f041e6, -17px 1px 0 #e5f041e6,
+    -20px 10px 0 #e5f041e6, -7px 23px 0 #e5f041e6, -15px 25px 0 #e5f041e6;
+}
+
+input:checked~.decoration {
+  transform: translateX(-20px);
+  width: 10px;
+  height: 10px;
+  background: white;
+  box-shadow: -12px 0 0 white, -6px 0 0 1.6px white, 5px 15px 0 1px white,
+    1px 17px 0 white, 10px 17px 0 white;
+}
+
+input:checked+.slider {
+  background-color: #5494de;
+}
+
+input:checked+.slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #efdf2b, 0 0 10px 0px #efdf2b;
+}
+/* تحسين تنسيق footer-content */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;       /* تقليل المسافة بين الأزرار */
+  flex-wrap: wrap; /* السماح بالتفاف عند الضرورة */
+  padding: 10px 0;  /* إضافة مسافة داخلية */
+  list-style: none; /* إخفاء النقاط */
+  padding-left: 0;  /* إزالة المسافة اليسرى الناتجة عن النقاط */
+  margin: 0; /* إزالة الهوامش الافتراضية */
+}
+.footer-content li {
+  display: inline-block; /* عرض العناصر في سطر واحد */
+  margin: 0; /* إزالة الهوامش */
+}
+/* إخفاء الخط تحت الروابط */
+.footer-content li a {
+  text-decoration: none !important; /* إزالة الخط التحتي */
+  list-style: none; /* تأكيد إخفاء النقاط */
+
+}
+body:hover .code-cursor {
+  opacity: 1;
+}
+
+body:not(:hover) .code-cursor {
+  opacity: 0;
+}
+footer {
+  /* position: fixed; */
+  bottom: 0; /* تأكد من وجود هذه القاعدة */
+  width: 100%;
+  position: absolute;
+}

@@ -1,0 +1,208 @@
+/* تحسين استعلامات الوسائط وتغطية جميع الأجهزة */
+/* شاشات كبيرة (1200px فما فوق) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+/* أجهزة متوسطة (992px - 1199px) */
+@media (max-width: 1199px) {
+  .swiper-container {
+    height: 400px;
+  }
+  .code-cursor {
+    display: none !important;
+  }
+}
+/* أجهزة صغيرة (768px - 991px) */
+@media (max-width: 991px) {
+  :root {
+    --tab-width: 25%;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .code-cursor {
+    display: none !important;
+  }
+}
+/* هواتف أفقية (576px - 767px) */
+@media (max-width: 767px) {
+  section {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .Social_media_BUTTON,
+  .Social_mediag {
+    width: 130px;
+    height: 45px;
+  }
+  #Abut_me {
+    flex-direction: column-reverse; /* الصورة أولاً ثم النص */
+    padding: 15px;
+    margin: 10px;
+  }
+  .footer-content {
+    flex-direction: row !important; /* إبقاء الأزرار في صف واحد */
+    flex-wrap: wrap; /* السماح بالتفاف إذا لزم الأمر */
+    justify-content: center; /* توسيط الأزرار */
+    gap: 8px; /* تقليل المسافة بين الأزرار */
+  }
+
+  .social-btn {
+    width: 110px !important; /* تحديد عرض ثابت */
+    height: 40px !important; /* تحديد ارتفاع ثابت */
+    font-size: 12px !important; /* تصغير حجم النص */
+    padding: 5px 10px !important; /* تقليل المساحة الداخلية */
+  }
+
+  .social-btn span {
+    display: none; /* إخفاء النص على الشاشات الصغيرة */
+  }
+
+  .social-btn svg {
+    width: 20px !important; /* تصغير حجم الأيقونات */
+    height: 20px !important;
+  }
+
+  .txt h2 {
+    font-size: 1.5rem;
+  }
+  .project-description {
+    font-size: 14px; /* حجم أصغر للوصف */
+  }
+  /* تحجيم الصورة */
+  .image-container img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  /* تحسين النصوص */
+  .txt {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .txt p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  /* تحسين أزرار السوشيال ميديا */
+  .footer-content {
+    gap: 10px;
+  }
+  .Social_media_BUTTON, 
+  .Social_mediag {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .tab_label {
+    font-size: 0.7rem; /* حجم مناسب للشاشات الصغيرة */
+  }
+  .language-switcher select {
+    padding: 10px 11px; /* تبسطيد الحجم */
+  }
+  .code-cursor {
+    display: none !important;
+  }
+  .project-description {
+    background: rgba(0,0,0,0.9);
+    margin-top: 10px;
+  }
+  }
+
+
+/* هواتف عمودية (320px - 575px) */
+@media (max-width: 575px) {
+  :root {
+    --tab-width: 33%;
+  }
+  
+  /* تحسين الأزرار في التذييل */
+  .social-btn {
+    width: 100% !important;
+    border-radius: 25px !important;
+  }
+
+  /* إصلاح محاذاة الصور */
+  .image-container img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .title {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+    /* تحسينات إضافية للشاشات الصغيرة جدًا */
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .image-container img {
+      width: 180px;
+      height: 180px;
+      text-align: center;
+    }
+    .image-container {
+      text-align: center;
+    }
+  
+    .txt p {
+      font-size: 0.85rem;
+    }
+    .code-cursor {
+      display: none !important;
+    }
+    .footer-content {
+      gap: 5px; /* تقليل المسافة بين الأزرار أكثر */
+    }
+  
+    .social-btn {
+      width: 50px !important; /* تحويل الأزرار إلى مربعات صغيرة */
+      height: 50px !important;
+      border-radius: 50% !important; /* جعلها دائرية */
+    }
+  
+    .social-btn svg {
+      margin: 0 auto; /* توسيط الأيقونات */
+    }
+    .language-switcher select {
+      padding: 10px 8px;
+    }
+  }
+
+
+/* أجهزة صغيرة جدًا (أقل من 319px) */
+@media (max-width: 319px) {
+  :root {
+    --tab-width: 50%;
+  }
+  .language-switcher select {
+    padding: 5px;
+  }
+    /* تحسينات إضافية للشاشات الصغيرة جدًا */
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .image-container img {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .txt p {
+      font-size: 0.85rem;
+    }
+    .code-cursor {
+      display: none !important;
+    }
+}
+
+button, .custom-button, [class*="Social_media"] {
+  touch-action: manipulation;
+}

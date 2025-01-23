@@ -1,0 +1,279 @@
+header h1 {
+  margin-left: 10px;
+}
+
+:root {
+  --tab-width: 15%; /* عرض التبويب كنسبة مئوية */
+  --tab-height: 32px; /* ارتفاع التبويب */
+  --indicator-height: 33px; /* ارتفاع المؤشر */
+  --indicator-transition: 0.2s ease-out; /* حركة الانتقال */
+}
+
+.indicator {
+  content: "";
+  width: var(--tab-width);
+  height: var(--indicator-height);
+  background: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 9;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 7px;
+  transform: translateX(var(--tab-position)); /* استخدام متغير CSS */
+  transition: transform var(--indicator-transition);
+}
+
+.tab {
+  width: var(--tab-width);
+  height: var(--tab-height);
+  position: absolute;
+  z-index: 99;
+  outline: none;
+  opacity: 0;
+}
+
+.tab_label {
+  width: var(--tab-width);
+  height: var(--tab-height);
+  font-weight: bold;
+  position: relative;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  /* cursor: pointer; */
+}
+
+.tab--1:checked~.indicator {
+  left: 2px;
+}
+
+.tab--2:checked~.indicator {
+  left: calc(var(--tab-width) + 2px);
+}
+
+.tab--3:checked~.indicator {
+  left: calc(var(--tab-width) * 2 + 2px);
+}
+
+
+
+.dark-theme .tab-container {
+  background-color: #747373;
+  text-decoration-color: black;
+}
+
+.dark-theme .tab_label {
+  color: #000;
+}
+
+.dark-theme .switch {
+
+  background-color: #747373;
+
+}
+
+.dark-theme .title h2 {
+  color: #f4f4f4;
+}
+
+/* تثبيت شريط التنقل */
+.tab-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3px;
+  background-color: #dadadb;
+  border-radius: 0px;
+}
+.switch {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#codeRainCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* للخلفية */
+  pointer-events: none;
+  /* منع التفاعل مع الماوس */
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 20px;
+}
+
+.dark-theme footer{
+  background-color: #444;
+}
+
+.language-switcher select {
+  padding: 10px 20px; /* إضافة مسافة داخلية حول النص داخل القائمة المنسدلة */
+  font-size: 13px; /* حجم النص داخل القائمة */
+  font-weight: bold; /* جعل النص غامقًا */
+  background-color: #b3b3b3; /* لون الخلفية الرمادي الفاتح للقائمة */
+  border: 2px solid #888585; /* لون الحدود الداكنة لتتناسب مع خلفية الهيدر والتذييل */
+  color: white; /* لون النص أبيض لتوفير تباين واضح */
+  border-radius: 31px; /* جعل حواف القائمة دائرية */
+  /* cursor: pointer;  */
+  /* تغيير شكل المؤشر إلى اليد للإشارة إلى إمكانية النقر */
+  appearance: none; /* إزالة المظهر الافتراضي للقائمة المنسدلة */
+  outline: none; /* إزالة الإطار الافتراضي عند التركيز */
+  transition: all 0.3s ease; /* تأثير سلس عند التغيير، مثل التمرير أو التركيز */
+  float: right; /* محاذاة القائمة إلى الجانب الأيمن */
+  margin-top: -1px; /* إزاحة طفيفة للأعلى لتحسين المحاذاة */
+}
+
+/* تأثير التمرير (Hover) */
+.language-switcher select:hover {
+  border-color: #6c6b6b; /* تغيير لون الحدود إلى لون أغمق عند التمرير */
+  box-shadow: 0 0 8px rgba(108, 107, 107, 0.5); /* إضافة ظل خفيف داكن لإبراز العنصر */
+}
+
+/* تأثير التركيز (Focus) */
+.language-switcher select:focus {
+  border-color: #3f3d46; /* تغيير لون الحدود إلى لون داكن عند التركيز */
+  box-shadow: 0 0 12px rgba(63, 61, 70, 0.7); /* إضافة ظل داكن أكبر لإبراز العنصر */
+}
+
+.language-switcher {
+  font-size: 19px; /* حجم النص للعناصر داخل المحول */
+  position: relative; /* يحدد العنصر كمرجع لعناصر مطلقة داخله */
+  z-index: 2000; /* ترتيب العنصر فوق العناصر الأخرى */
+  /* display: inline-block; */ /* ملاحظة: هذا السطر معلق ولا يتم تطبيقه */
+  float: right; /* محاذاة العنصر إلى الجانب الأيمن */
+  width: 3.5em; /* عرض الحاوية */
+  height: 2em; /* ارتفاع الحاوية */
+  /* cursor: pointer; تغيير شكل المؤشر إلى اليد */
+  background-color: #dadadb; /* لون الخلفية الرمادي الفاتح */
+  position: sticky; /* يجعل العنصر يظل ثابتًا في أعلى الصفحة عند التمرير */
+  top: 0; /* يحدد المسافة بين العنصر وأعلى الصفحة */
+  text-align: center; /* يجعل النص داخل العنصر مركزيًا أفقيًا */
+}
+
+.language-switcher select option {
+  border-radius: 20px; /* يجعل حواف الخيارات داخل القائمة دائرية */
+}
+
+.dark-theme .language-switcher{
+  background-color: #747373;;
+}
+.dark-theme .language-switcher select{
+  background-color: #b3b3b3; /* لون الخلفية الرمادي الفاتح */
+  border: 2px solid #292626;
+  color: #000;
+}
+/* تأثيرات hover لجميع الأزرار */
+button, .custom-button, [class*="Social_media"] {
+  transition: transform 0.3s ease;
+}
+
+button:hover, .custom-button:hover, [class*="Social_media"]:hover {
+  transform: translateY(-3px);
+}
+
+/* تحسين الظلال للوضع المظلم */
+.dark-theme section {
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+.flex-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.highlight-text {
+  background: linear-gradient(90deg, #4A90E2 0%, #6C5CE7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+    /* إعداد المؤشر */
+    .code-cursor {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #000;
+      border: 2px solid #000;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 13px #000, 0 0 20px #000;
+      animation: blink 1s infinite alternate;
+      z-index: 9999;
+      transition: opacity 0.3s ease; /* إضافة تأثير انتقالي */
+    }
+
+    /* تأثير الأنيميشن (وميض) */
+    @keyframes blink {
+      0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+      100% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    }
+        /* الزر أو الصورة */
+        .btn, .img {
+          background: #00ff88;
+          color: #000;
+          border: none;
+          padding: 10px 20px;
+          margin: 20px;
+          border-radius: 5px;
+          font-size: 1rem;
+          cursor: none; /* إخفاء المؤشر الافتراضي */
+          display: inline-block;
+          text-align: center;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          transition: background 0.3s ease, transform 0.3s ease;
+        }
+    
+        .btn:hover, .img:hover {
+          background: #005f44;
+          transform: scale(1.1);
+        }
+    
+        /* تأثير المؤشر عند الضغط */
+        .code-cursor.click {
+          transform: translate(-50%, -50%) scale(0.8);
+          background: #ff0066;
+        }
+        .dark-theme .code-cursor.click {
+          background: #ff0066;
+        }
+        .dark-theme .code-cursor {
+          background: #ffffff;
+          border: 2px solid #ffffff;
+          box-shadow: 0 0 13px #ffffff, 0 0 20px #ffffff;}
+          .language-switcher:hover ~ .code-cursor,
+.language-switcher select:hover ~ .code-cursor {
+  display: none !important;
+}
+body:hover .code-cursor {
+  opacity: 1;
+}
+
+body:not(:hover) .code-cursor {
+  opacity: 0;
+}
+
+

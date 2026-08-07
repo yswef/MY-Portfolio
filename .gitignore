@@ -1,0 +1,11 @@
+# قاعدة البيانات تُنشأ تلقائيًا في أول تشغيل — لا تُرفع نسخة التطوير المحلية
+data/*.sqlite
+data/*.sqlite-journal
+
+# الصور المرفوعة من لوحة التحكم لا تُرفع كنسخة تطوير محلية
+assets/img/uploads/*
+!assets/img/uploads/.gitkeep
+
+.vscode/
+.DS_Store
+Thumbs.db

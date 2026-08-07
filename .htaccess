@@ -1,0 +1,47 @@
+# ============================================================
+#  إعدادات أباتشي — Hostinger (PHP 8.2)
+# ============================================================
+
+Options -Indexes
+
+# --- حماية قاعدة البيانات وملفات الإعداد الحساسة ---
+<FilesMatch "\.(sqlite|sqlite3|db)$">
+    Require all denied
+</FilesMatch>
+
+<Files "setup.php">
+    # بعد إنشاء حساب المدير، احذف هذا الملف نهائيًا من الاستضافة.
+    # هذا السطر يمنع الوصول له مؤقتًا حتى تحذفه فعليًا - عطّل السطر التالي فقط أثناء أول تشغيل:
+    # Require all granted
+</Files>
+
+# --- رؤوس الأمان ---
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
+
+# --- فرض HTTPS ---
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# --- الأداء ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css                "access plus 1 month"
+  ExpiresByType application/javascript   "access plus 1 month"
+  ExpiresByType image/jpeg               "access plus 6 months"
+  ExpiresByType image/png                "access plus 6 months"
+  ExpiresByType image/x-icon             "access plus 1 year"
+  ExpiresByType font/woff2               "access plus 1 year"
+  ExpiresByType text/html                "access plus 0 seconds"
+  ExpiresByType application/json         "access plus 0 seconds"
+</IfModule>
